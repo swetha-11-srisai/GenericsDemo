@@ -9,15 +9,15 @@ namespace GenericsDemo
             bool flag= true;
             while (flag)
             {
-                Console.WriteLine("Enter your choice to execute-1-MaxIntNumber,2-Exit");
+                Console.WriteLine("Enter your choice to execute-1-MaxfloatNumber,2-Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
                         Console.WriteLine("enter the numbers");
-                        int firstNumber = Convert.ToInt32(Console.ReadLine());
-                        int secondNumber = Convert.ToInt32(Console.ReadLine());
-                        int thirdNumber = Convert.ToInt32(Console.ReadLine());
+                        double firstNumber = Convert.ToDouble(Console.ReadLine());
+                        double secondNumber = Convert.ToDouble(Console.ReadLine());
+                        double thirdNumber = Convert.ToDouble(Console.ReadLine());
                         MaximumThreeVariables max =new  MaximumThreeVariables();
                         max.CheckMaxNumber(firstNumber,secondNumber,thirdNumber);
                         break;
