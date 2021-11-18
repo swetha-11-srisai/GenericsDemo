@@ -6,18 +6,25 @@ namespace GenericsDemo
     {
         static void Main(string[] args)
         {
-            int[] intArray = { 2, 3, 4, 5, 2 };
-            double[] doubleArray = { 2.1, 3.3, 4.2, 5.1, 2.4 };
-            char[] charArray = { 'S','W','E','T','H' };
-            Program.ToPrint<int>(intArray);
-            Program.ToPrint<double>(doubleArray);
-            Program.ToPrint<char>(charArray);
-        }
-        public static  void ToPrint<T>(T[] inputArray)
-        {
-            foreach(var elements in inputArray)
+            bool flag= true;
+            while (flag)
             {
-                Console.WriteLine(elements);
+                Console.WriteLine("Enter your choice to execute-1-MaxIntNumber,2-Exit");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        Console.WriteLine("enter the numbers");
+                        int firstNumber = Convert.ToInt32(Console.ReadLine());
+                        int secondNumber = Convert.ToInt32(Console.ReadLine());
+                        int thirdNumber = Convert.ToInt32(Console.ReadLine());
+                        MaximumThreeVariables max =new  MaximumThreeVariables();
+                        max.CheckMaxNumber(firstNumber,secondNumber,thirdNumber);
+                        break;
+                    case 2:
+                        flag = false;
+                        break;
+                }
             }
         }
        
