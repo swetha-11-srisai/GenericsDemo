@@ -7,7 +7,7 @@ namespace GenericsDemo
     class MaximumThreeVariables
     {
        
-        public void CheckMaxNumber(int firstNumber, int secondNumber, int thirdNumber)
+        public void CheckMaxNumber(double firstNumber, double secondNumber, double thirdNumber)
         {
             if(firstNumber > secondNumber && firstNumber > thirdNumber)
             {
