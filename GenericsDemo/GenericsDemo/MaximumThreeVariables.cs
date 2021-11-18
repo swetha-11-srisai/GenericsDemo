@@ -7,20 +7,26 @@ namespace GenericsDemo
     class MaximumThreeVariables
     {
        
-        public void CheckMaxNumber(double firstNumber, double secondNumber, double thirdNumber)
+        public void CheckMaxNumber()
         {
-            if(firstNumber > secondNumber && firstNumber > thirdNumber)
+            string str = "Apple";
+            string strone = "orange";
+            string strtwo = "bananna";
+            if(str.Length > strone.Length && str.Length > strtwo.Length)
             {
-                Console.WriteLine("First Number is greater");
+                Console.WriteLine("String is greater"+ str.Length);
+
             }
-            if(secondNumber > thirdNumber)
+            if (strone.Length > strtwo.Length)
             {
-                Console.WriteLine("Second Number is greater");
+                Console.WriteLine("String One is greater" + strone.Length);
+
             }
             else
             {
-                Console.WriteLine("Third Number is greater");
+                Console.WriteLine("String Two is greater" + strtwo.Length);
             }
+
 
         }
     }
